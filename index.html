@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>黃宗堂 & 彭麗雪 婚禮邀請函 | Wedding RSVP</title>
+  <title>Zong-Tang & Li-Xue Wedding Invitation | 婚禮邀請函</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -21,53 +22,377 @@
       --soft-shadow: 0 12px 35px rgba(212, 163, 115, 0.12);
       --card-border: 1px solid rgba(212, 163, 115, 0.28);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
-    body { font-family: 'Noto Serif TC', serif; background-color: var(--morandi-bg); color: var(--text-main); line-height: 1.8; overflow-x: hidden; }
-    .glass-nav { position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); display: flex; justify-content: center; gap: 28px; padding: 15px 20px; z-index: 1000; border-bottom: 1px solid rgba(212, 163, 115, 0.25); }
-    .glass-nav a { text-decoration: none; font-size: 0.88rem; letter-spacing: 2px; color: var(--text-main); transition: color 0.3s ease; }
-    .glass-nav a:hover { color: var(--morandi-warm); }
-    .hero-banner { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 100px 24px 60px; background: linear-gradient(180deg, rgba(250, 246, 245, 0.72) 0%, rgba(250, 246, 245, 0.96) 100%), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; }
-    .hero-en-names { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 7vw, 4.8rem); font-weight: 400; color: var(--morandi-accent); letter-spacing: 3px; line-height: 1.1; margin-bottom: 10px; }
-    .hero-zh-names { font-size: 1.3rem; font-weight: 300; letter-spacing: 7px; color: var(--text-sub); margin-left: 7px; margin-bottom: 18px; }
-    .hero-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.15rem; color: var(--morandi-warm); letter-spacing: 2px; margin-bottom: 38px; }
-    .countdown-wrap { display: flex; align-items: center; background: var(--morandi-card); padding: 14px 22px; border-radius: 20px; box-shadow: var(--soft-shadow); border: var(--card-border); gap: 12px; }
-    .timer-unit { text-align: center; min-width: 58px; }
-    .timer-val { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; color: var(--morandi-accent); line-height: 1; }
-    .timer-tag { font-size: 0.68rem; color: var(--morandi-sage); letter-spacing: 1.5px; margin-top: 4px; display: block; font-weight: 600; }
-    .timer-divider { width: 1px; height: 38px; background-color: rgba(212, 163, 115, 0.35); }
-    .layout-container { max-width: 660px; margin: 0 auto; padding: 70px 20px; }
-    .block-header { text-align: center; margin-bottom: 36px; }
-    .block-header h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.3rem; letter-spacing: 2px; font-weight: 400; color: var(--morandi-accent); }
-    .block-header p { font-size: 0.85rem; letter-spacing: 4px; color: var(--morandi-sage); text-transform: uppercase; }
-    .v-card-box { background: var(--morandi-card); border-radius: 18px; padding: 36px 30px; box-shadow: var(--soft-shadow); border: var(--card-border); }
-    .detail-item { margin-bottom: 24px; }
-    .detail-tag { font-size: 0.78rem; letter-spacing: 2px; color: var(--morandi-warm); text-transform: uppercase; font-weight: 600; margin-bottom: 4px; }
-    .detail-val { font-size: 1.05rem; color: var(--text-main); }
-    .no-wrap { white-space: nowrap !important; }
-    .map-action-btn { display: inline-block; margin-top: 10px; padding: 8px 18px; background: rgba(212, 163, 115, 0.15); color: var(--morandi-accent); text-decoration: none; font-size: 0.85rem; border-radius: 20px; border: 1px solid rgba(212, 163, 115, 0.35); transition: all 0.3s; }
-    .map-action-btn:hover { background: var(--morandi-warm); color: #fff; }
-    .accordion-trigger { width: 100%; text-align: left; background: none; border: none; padding: 16px 0 6px; font-size: 0.95rem; font-family: inherit; color: var(--morandi-accent); cursor: pointer; display: flex; justify-content: space-between; border-top: 1px dashed rgba(212, 163, 115, 0.4); margin-top: 10px; }
-    .accordion-body { display: none; font-size: 0.88rem; color: var(--text-sub); padding: 10px 0 4px; line-height: 1.85; }
-    .form-card { background: #ffffff; border-radius: 20px; padding: 40px 30px; box-shadow: var(--soft-shadow); border: var(--card-border); }
-    .input-field { margin-bottom: 24px; }
-    label { display: block; font-size: 0.9rem; margin-bottom: 8px; color: var(--text-main); }
-    label span.en-label { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; letter-spacing: 1px; color: var(--morandi-sage); margin-left: 6px; font-weight: 600; }
-    label .req-star { color: var(--morandi-accent); margin-left: 4px; }
-    input[type="text"], input[type="tel"], input[type="email"], input[type="number"], select, textarea { width: 100%; padding: 13px 16px; border: 1px solid #ebd9d2; border-radius: 10px; font-size: 0.95rem; font-family: inherit; background-color: #fdfbfb; color: var(--text-main); outline: none; transition: all 0.3s; }
-    input:focus, select:focus, textarea:focus { border-color: var(--morandi-warm); background-color: #fff; box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.18); }
-    .radio-container { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
-    .radio-btn-label { display: flex; align-items: center; gap: 6px; background: rgba(212, 163, 115, 0.12); padding: 9px 18px; border-radius: 25px; cursor: pointer; font-size: 0.9rem; border: 1px solid transparent; transition: 0.2s; }
-    .radio-btn-label:hover { border-color: var(--morandi-warm); }
-    .submit-cta { width: 100%; padding: 15px; background: linear-gradient(135deg, var(--morandi-warm) 0%, var(--morandi-accent) 100%); color: #fff; border: none; border-radius: 30px; font-size: 1.05rem; letter-spacing: 2.5px; font-family: inherit; cursor: pointer; box-shadow: 0 8px 22px rgba(181, 108, 108, 0.25); transition: transform 0.2s, box-shadow 0.2s; margin-top: 12px; }
-    .submit-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(181, 108, 108, 0.35); }
-    .hidden-panel { display: none; }
-    #feedback-dialog { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(56, 49, 49, 0.5); backdrop-filter: blur(4px); z-index: 1001; align-items: center; justify-content: center; padding: 20px; }
-    .dialog-inner { background: #fff; padding: 40px 30px; border-radius: 20px; text-align: center; max-width: 420px; width: 100%; box-shadow: 0 20px 40px rgba(0,0,0,0.18); }
-    .dialog-inner h3 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--morandi-accent); margin-bottom: 8px; }
-    footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; color: var(--text-sub); letter-spacing: 2px; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: 'Noto Serif TC', serif;
+      background-color: var(--morandi-bg);
+      color: var(--text-main);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    .glass-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 15px 20px;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(212, 163, 115, 0.25);
+    }
+
+    .glass-nav a {
+      text-decoration: none;
+      font-size: 0.88rem;
+      letter-spacing: 2px;
+      color: var(--text-main);
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    .glass-nav a:hover {
+      color: var(--morandi-warm);
+    }
+
+    .hero-banner {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 24px 60px;
+      background: linear-gradient(180deg, rgba(250, 246, 245, 0.7) 0%, rgba(250, 246, 245, 0.96) 100%),
+                  url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    }
+
+    .hero-en-names {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 7vw, 4.8rem);
+      font-weight: 400;
+      color: var(--morandi-accent);
+      letter-spacing: 3px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .hero-zh-names {
+      font-size: 1.3rem;
+      font-weight: 300;
+      letter-spacing: 7px;
+      color: var(--text-sub);
+      margin-left: 7px;
+      margin-bottom: 18px;
+    }
+
+    .hero-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--morandi-warm);
+      letter-spacing: 2px;
+      margin-bottom: 38px;
+    }
+
+    .countdown-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--morandi-card);
+      padding: 14px 22px;
+      border-radius: 20px;
+      box-shadow: var(--soft-shadow);
+      border: var(--card-border);
+      gap: 12px;
+    }
+
+    .timer-unit {
+      text-align: center;
+      min-width: 58px;
+    }
+
+    .timer-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--morandi-accent);
+      line-height: 1;
+    }
+
+    .timer-tag {
+      font-size: 0.68rem;
+      color: var(--morandi-sage);
+      letter-spacing: 1.5px;
+      margin-top: 4px;
+      display: block;
+      font-weight: 600;
+    }
+
+    .timer-divider {
+      width: 1px;
+      height: 38px;
+      background-color: rgba(212, 163, 115, 0.35);
+    }
+
+    .layout-container {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    .block-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .block-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.3rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+      color: var(--morandi-accent);
+    }
+
+    .block-header p {
+      font-size: 0.85rem;
+      letter-spacing: 4px;
+      color: var(--morandi-sage);
+      text-transform: uppercase;
+    }
+
+    .v-card-box {
+      background: var(--morandi-card);
+      border-radius: 18px;
+      padding: 36px 30px;
+      box-shadow: var(--soft-shadow);
+      border: var(--card-border);
+    }
+
+    .detail-item {
+      margin-bottom: 24px;
+    }
+
+    .detail-tag {
+      font-size: 0.78rem;
+      letter-spacing: 2px;
+      color: var(--morandi-warm);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .detail-val {
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+
+    .no-wrap {
+      white-space: nowrap !important;
+    }
+
+    .map-action-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 18px;
+      background: rgba(212, 163, 115, 0.15);
+      color: var(--morandi-accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+      border-radius: 20px;
+      border: 1px solid rgba(212, 163, 115, 0.35);
+      transition: all 0.3s;
+    }
+
+    .map-action-btn:hover {
+      background: var(--morandi-warm);
+      color: #fff;
+    }
+
+    .accordion-trigger {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 16px 0 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--morandi-accent);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px dashed rgba(212, 163, 115, 0.4);
+      margin-top: 10px;
+    }
+
+    .accordion-body {
+      display: none;
+      font-size: 0.88rem;
+      color: var(--text-sub);
+      padding: 10px 0 4px;
+      line-height: 1.85;
+    }
+
+    .form-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: var(--soft-shadow);
+      border: var(--card-border);
+    }
+
+    .input-field {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    label span.en-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      color: var(--morandi-sage);
+      margin-left: 6px;
+      font-weight: 600;
+    }
+
+    label .req-star {
+      color: var(--morandi-accent);
+      margin-left: 4px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid #ebd9d2;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      background-color: #fdfbfb;
+      color: var(--text-main);
+      outline: none;
+      transition: all 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--morandi-warm);
+      background-color: #fff;
+      box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.18);
+    }
+
+    .radio-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .radio-btn-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212, 163, 115, 0.12);
+      padding: 9px 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+      transition: 0.2s;
+    }
+
+    .radio-btn-label:hover {
+      border-color: var(--morandi-warm);
+    }
+
+    .submit-cta {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--morandi-warm) 0%, var(--morandi-accent) 100%);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.05rem;
+      letter-spacing: 2.5px;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(181, 108, 108, 0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 12px;
+    }
+
+    .submit-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(181, 108, 108, 0.35);
+    }
+
+    .hidden-panel {
+      display: none;
+    }
+
+    #feedback-dialog {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(56, 49, 49, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 1001;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .dialog-inner {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    }
+
+    .dialog-inner h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      color: var(--morandi-accent);
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      letter-spacing: 2px;
+    }
   </style>
 </head>
 <body>
+
   <nav class="glass-nav">
     <a href="#about">關於我們</a>
     <a href="#details">婚禮詳情</a>
@@ -78,14 +403,27 @@
     <div class="hero-en-names">Zong-Tang & Li-Xue</div>
     <div class="hero-zh-names">黃宗堂 ＆ 彭麗雪</div>
     <div class="hero-quote">Two Souls, One Heart</div>
+
     <div class="countdown-wrap">
-      <div class="timer-unit"><div id="val-days" class="timer-val">00</div><span class="timer-tag">DAYS</span></div>
+      <div class="timer-unit">
+        <div id="val-days" class="timer-val">00</div>
+        <span class="timer-tag">DAYS</span>
+      </div>
       <div class="timer-divider"></div>
-      <div class="timer-unit"><div id="val-hours" class="timer-val">00</div><span class="timer-tag">HOURS</span></div>
+      <div class="timer-unit">
+        <div id="val-hours" class="timer-val">00</div>
+        <span class="timer-tag">HOURS</span>
+      </div>
       <div class="timer-divider"></div>
-      <div class="timer-unit"><div id="val-mins" class="timer-val">00</div><span class="timer-tag">MINS</span></div>
+      <div class="timer-unit">
+        <div id="val-mins" class="timer-val">00</div>
+        <span class="timer-tag">MINS</span>
+      </div>
       <div class="timer-divider"></div>
-      <div class="timer-unit"><div id="val-secs" class="timer-val">00</div><span class="timer-tag">SECS</span></div>
+      <div class="timer-unit">
+        <div id="val-secs" class="timer-val">00</div>
+        <span class="timer-tag">SECS</span>
+      </div>
     </div>
   </section>
 
@@ -94,26 +432,31 @@
       <h2>Wedding Details</h2>
       <p>婚宴時間與地點</p>
     </div>
+
     <div class="v-card-box">
       <div class="detail-item">
         <div class="detail-tag">DATE & TIME / 婚禮日期時間</div>
         <div class="detail-val">2026 年 11 月 14 日（星期六）<span class="no-wrap">中午 12:30 入席</span></div>
       </div>
+
       <div class="detail-item">
         <div class="detail-tag">LOCATION / 宴客會場</div>
         <div class="detail-val"><strong><span class="no-wrap">頭份英吉利活海鮮餐廳</span></strong></div>
       </div>
+
       <div class="detail-item">
         <div class="detail-tag">ADDRESS / 地址</div>
         <div class="detail-val"><span class="no-wrap">350 苗栗縣竹南鎮龍鳳里龍江街 213 號</span></div>
         <a href="https://maps.google.com/?q=苗栗縣竹南鎮龍鳳里龍江街213號" target="_blank" class="map-action-btn">📍 開啟 Google 地圖導航</a>
       </div>
+
       <div class="detail-item" style="margin-bottom: 10px;">
         <div class="detail-tag">DRESS CODE / 著裝建議</div>
         <div class="detail-val">暖陽大地色、乾燥玫瑰色、莫蘭迪色系</div>
       </div>
+
       <button type="button" class="accordion-trigger" onclick="toggleNavAccordion()">
-        <span>🚗 交通與停車指引（隱藏面板）</span>
+        <span>🚗 交通與停車指引（點擊展開）</span>
         <span id="nav-arrow">▼</span>
       </button>
       <div id="nav-accordion-content" class="accordion-body">
@@ -128,17 +471,29 @@
       <h2>RSVP</h2>
       <p>出席回函調查</p>
     </div>
+
     <div class="form-card">
       <iframe name="hidden_post_frame" id="hidden_post_frame" style="display:none;" onload="if(hasSubmitted){showCompleteModal();}"></iframe>
-      <form id="rsvpNativeForm" action="https://docs.google.com/forms/d/e/1FAIpQLScT8fICwWF4UXV5SuVJwWEoD5LhIplqZj3FcOcaKbugsTQ4Lw/formResponse" method="POST" target="hidden_post_frame" onsubmit="return triggerSubmit();">
+
+      <form id="rsvpNativeForm" 
+            action="https://docs.google.com/forms/d/e/1FAIpQLScT8fICwWF4UXV5SuVJwWEoD5LhIplqZj3FcOcaKbugsTQ4Lw/formResponse" 
+            method="POST" 
+            target="hidden_post_frame" 
+            onsubmit="return triggerSubmit();">
+        
+        <!-- 姓名 -->
         <div class="input-field">
           <label>姓名<span class="en-label">NAME</span><span class="req-star">*</span></label>
           <input type="text" name="entry.1018233310" placeholder="請填寫您的姓名" required>
         </div>
+
+        <!-- 聯絡電話 -->
         <div class="input-field">
           <label>聯絡電話<span class="en-label">PHONE</span><span class="req-star">*</span></label>
           <input type="tel" name="entry.2102998262" placeholder="09xx-xxx-xxx" required>
         </div>
+
+        <!-- 與新人的關係 -->
         <div class="input-field">
           <label>與新人的關係<span class="en-label">RELATIONSHIP</span><span class="req-star">*</span></label>
           <select name="entry.43770032" required>
@@ -152,6 +507,8 @@
             <option value="共同好友">共同好友</option>
           </select>
         </div>
+
+        <!-- 是否出席 -->
         <div class="input-field">
           <label>是否出席婚宴？<span class="en-label">ATTENDANCE</span><span class="req-star">*</span></label>
           <div class="radio-container">
@@ -165,29 +522,27 @@
             </label>
           </div>
         </div>
+
+        <!-- 參加人數 -->
         <div id="field-guest-group" class="input-field">
           <label>參加午宴人數<span class="en-label">GUESTS</span><span class="req-star">*</span></label>
           <input type="number" id="input-guests-count" name="entry.576043762" min="0" max="10" value="1" oninput="checkDynamicFields(this.value)" required>
         </div>
+
+        <!-- 兒童椅 -->
         <div id="dynamic-diet-chair-block">
           <div class="input-field">
-            <label>飲食需求<span class="en-label">DIETARY</span></label>
-            <select>
-              <option value="葷食">葷食</option>
-              <option value="素食（全素）">素食（全素）</option>
-              <option value="素食（蛋奶素）">素食（蛋奶素）</option>
-            </select>
-          </div>
-          <div class="input-field">
-            <label>是否需要兒童椅<span class="en-label">BABY CHAIR</span></label>
-            <select>
-              <option value="不需要">不需要</option>
-              <option value="需要 1 張">需要 1 張</option>
-              <option value="需要 2 張">需要 2 張</option>
-              <option value="需要 3 張以上">需要 3 張以上</option>
+            <label>是否需要兒童椅？<span class="en-label">BABY CHAIR</span></label>
+            <select name="entry.1159761345">
+              <option value="0">不需要</option>
+              <option value="1">需要 1 張</option>
+              <option value="2">需要 2 張</option>
+              <option value="3">需要 3 張以上</option>
             </select>
           </div>
         </div>
+
+        <!-- 喜帖發送需求 -->
         <div class="input-field">
           <label>喜帖發送需求<span class="en-label">INVITATION</span><span class="req-star">*</span></label>
           <select name="entry.868794149" onchange="handleCardOptionSwitch(this.value)" required>
@@ -196,24 +551,25 @@
             <option value="需要，請寄紙本喜帖給我">需要，請寄紙本喜帖給我</option>
           </select>
         </div>
+
+        <!-- 電子信箱 -->
         <div id="field-email-wrap" class="input-field hidden-panel">
           <label>電子信箱<span class="en-label">E-MAIL</span><span class="req-star">*</span></label>
           <input type="email" id="input-email-val" name="entry.2062476064" placeholder="example@email.com">
         </div>
-        <div id="field-address-wrap" class="hidden-panel">
-          <div class="input-field">
-            <label>紙本喜帖寄送地址（含 3+2 郵遞區號）<span class="en-label">POSTAL ADDRESS</span><span class="req-star">*</span></label>
-            <input type="text" id="input-addr-val" name="entry.196824581" placeholder="例：35054 苗栗縣竹南鎮...">
-          </div>
-          <div class="input-field">
-            <label>收件電話<span class="en-label">RECIPIENT PHONE</span></label>
-            <input type="tel" name="entry.2055140837" placeholder="郵件配送聯絡手機">
-          </div>
+
+        <!-- 紙本地址 -->
+        <div id="field-address-wrap" class="input-field hidden-panel">
+          <label>紙本喜帖寄送地址（含 3+2 郵遞區號）<span class="en-label">POSTAL ADDRESS</span><span class="req-star">*</span></label>
+          <input type="text" id="input-addr-val" name="entry.196824581" placeholder="例：35054 苗栗縣竹南鎮...">
         </div>
+
+        <!-- 祝福語 -->
         <div class="input-field">
           <label>給新人的祝福語<span class="en-label">BLESSINGS</span></label>
           <textarea name="entry.332274934" rows="3" placeholder="給宗堂與麗雪的一段話..."></textarea>
         </div>
+
         <button type="submit" class="submit-cta">送出回函 SEND RSVP</button>
       </form>
     </div>
@@ -228,7 +584,9 @@
     </div>
   </div>
 
-  <footer>Zong-Tang & Li-Xue Wedding • 2026.11.14</footer>
+  <footer>
+    Zong-Tang & Li-Xue Wedding • 2026.11.14
+  </footer>
 
   <script>
     const targetWeddingStamp = new Date("2026-11-14T12:30:00").getTime();
@@ -246,35 +604,72 @@
         document.getElementById("val-secs").innerText = String(s).padStart(2, '0');
       }
     }
-    setInterval(runTimer, 1000); runTimer();
+    setInterval(runTimer, 1000);
+    runTimer();
 
     function toggleNavAccordion() {
       const panel = document.getElementById("nav-accordion-content");
       const arrow = document.getElementById("nav-arrow");
-      if (panel.style.display === "block") { panel.style.display = "none"; arrow.innerText = "▼"; }
-      else { panel.style.display = "block"; arrow.innerText = "▲"; }
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        arrow.innerText = "▼";
+      } else {
+        panel.style.display = "block";
+        arrow.innerText = "▲";
+      }
     }
+
     function checkDynamicFields(val) {
       const block = document.getElementById("dynamic-diet-chair-block");
       block.style.display = parseInt(val, 10) > 0 ? "block" : "none";
     }
+
     function handleAttendanceSwitch(isAttending) {
       const guestGroup = document.getElementById("field-guest-group");
       const guestInput = document.getElementById("input-guests-count");
-      if (isAttending) { guestGroup.style.display = "block"; guestInput.value = "1"; guestInput.required = true; checkDynamicFields(1); }
-      else { guestGroup.style.display = "none"; guestInput.value = "0"; guestInput.required = false; checkDynamicFields(0); }
+      if (isAttending) {
+        guestGroup.style.display = "block";
+        guestInput.value = "1";
+        guestInput.required = true;
+        checkDynamicFields(1);
+      } else {
+        guestGroup.style.display = "none";
+        guestInput.value = "0";
+        guestInput.required = false;
+        checkDynamicFields(0);
+      }
     }
+
     function handleCardOptionSwitch(val) {
       const emailWrap = document.getElementById("field-email-wrap");
       const addrWrap = document.getElementById("field-address-wrap");
       const emailInput = document.getElementById("input-email-val");
       const addrInput = document.getElementById("input-addr-val");
-      if (val === "需要，請寄電子喜帖給我") { emailWrap.style.display = "block"; addrWrap.style.display = "none"; emailInput.required = true; addrInput.required = false; }
-      else if (val === "需要，請寄紙本喜帖給我") { emailWrap.style.display = "none"; addrWrap.style.display = "block"; emailInput.required = false; addrInput.required = true; }
-      else { emailWrap.style.display = "none"; addrWrap.style.display = "none"; emailInput.required = false; addrInput.required = false; }
+
+      if (val === "需要，請寄電子喜帖給我") {
+        emailWrap.style.display = "block";
+        addrWrap.style.display = "none";
+        emailInput.required = true;
+        addrInput.required = false;
+      } else if (val === "需要，請寄紙本喜帖給我") {
+        emailWrap.style.display = "none";
+        addrWrap.style.display = "block";
+        emailInput.required = false;
+        addrInput.required = true;
+      } else {
+        emailWrap.style.display = "none";
+        addrWrap.style.display = "none";
+        emailInput.required = false;
+        addrInput.required = false;
+      }
     }
+
     let hasSubmitted = false;
-    function triggerSubmit() { hasSubmitted = true; return true; }
+    function triggerSubmit() {
+      hasSubmitted = true;
+      return true;
+    }
+
     function showCompleteModal() {
       document.getElementById("feedback-dialog").style.display = "flex";
       document.getElementById("rsvpNativeForm").reset();
@@ -282,7 +677,10 @@
       checkDynamicFields(1);
       hasSubmitted = false;
     }
-    function closeModal() { document.getElementById("feedback-dialog").style.display = "none"; }
+
+    function closeModal() {
+      document.getElementById("feedback-dialog").style.display = "none";
+    }
   </script>
 </body>
 </html>
